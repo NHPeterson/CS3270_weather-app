@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/cardview_light_background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarWeeklyForecast"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:useDefaultMargins="true">
+
+            <TextView
+                android:id="@+id/txtWeeklyDay"
+                android:layout_columnWeight="1"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/txtWeeklyHigh"
+                android:layout_columnWeight="1"
+                android:text="@string/high"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/txtWeeklyLow"
+                android:layout_columnWeight="1"
+                android:text="@string/low"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/txtWeeklyPrecip"
+                android:layout_columnWeight="1"
+                android:text="@string/precipitation"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/txtDay1"
+                android:layout_columnWeight="1"
+                android:text="@string/today"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtHigh1"
+                android:layout_columnWeight="1"
+                android:text="@string/fahrenheit"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtLow1"
+                android:layout_columnWeight="1"
+                android:text="@string/fahrenheit"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtPrecip1"
+                android:layout_columnWeight="1"
+                android:text="@string/percent"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtDay2"
+                android:layout_columnWeight="1"
+                android:text="@string/monday"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtHigh2"
+                android:layout_columnWeight="1"
+                android:text="@string/fahrenheit"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtLow2"
+                android:layout_columnWeight="1"
+                android:text="@string/fahrenheit"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtPrecip2"
+                android:layout_columnWeight="1"
+                android:text="@string/percent"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtDay3"
+                android:layout_columnWeight="1"
+                android:text="@string/tuesday"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtHigh3"
+                android:layout_columnWeight="1"
+                android:text="@string/fahrenheit"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtLow3"
+                android:layout_columnWeight="1"
+                android:text="@string/fahrenheit"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtPrecip3"
+                android:layout_columnWeight="1"
+                android:text="@string/percent"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtDay4"
+                android:layout_columnWeight="1"
+                android:text="@string/wednesday"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtHigh4"
+                android:layout_columnWeight="1"
+                android:text="@string/fahrenheit"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtLow4"
+                android:layout_columnWeight="1"
+                android:text="@string/fahrenheit"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtPrecip4"
+                android:layout_columnWeight="1"
+                android:text="@string/percent"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtDay5"
+                android:layout_columnWeight="1"
+                android:text="@string/thursday"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtHigh5"
+                android:layout_columnWeight="1"
+                android:text="@string/fahrenheit"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtLow5"
+                android:layout_columnWeight="1"
+                android:text="@string/fahrenheit"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtPrecip5"
+                android:layout_columnWeight="1"
+                android:text="@string/percent"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtDay6"
+                android:layout_columnWeight="1"
+                android:text="@string/friday"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtHigh6"
+                android:layout_columnWeight="1"
+                android:text="@string/fahrenheit"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtLow6"
+                android:layout_columnWeight="1"
+                android:text="@string/fahrenheit"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtPrecip6"
+                android:layout_columnWeight="1"
+                android:text="@string/percent"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtDay7"
+                android:layout_columnWeight="1"
+                android:text="@string/saturday"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtHigh7"
+                android:layout_columnWeight="1"
+                android:text="@string/fahrenheit"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtLow7"
+                android:layout_columnWeight="1"
+                android:text="@string/fahrenheit"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtPrecip7"
+                android:layout_columnWeight="1"
+                android:text="@string/percent"
+                android:textSize="20sp"/>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
